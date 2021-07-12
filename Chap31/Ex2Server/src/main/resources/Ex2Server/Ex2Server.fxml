@@ -4,12 +4,11 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ex2Server.Ex2Server">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ex2Server.Ex2ServerController">
    <children>
       <ScrollPane prefHeight="400.0" prefWidth="600.0">
          <content>
-            <TextArea prefHeight="398.0" prefWidth="599.0" />
+            <TextArea fx:id="ta" prefHeight="398.0" prefWidth="599.0" />
          </content>
       </ScrollPane>
    </children>

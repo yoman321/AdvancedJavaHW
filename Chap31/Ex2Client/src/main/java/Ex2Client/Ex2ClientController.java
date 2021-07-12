@@ -32,13 +32,15 @@ public class Ex2ClientController {
         try {
             toServer.writeDouble(Double.valueOf(weight.getText()));
             toServer.writeDouble(Double.valueOf(height.getText()));
+            toServer.flush();
 
             double bmi = fromServer.readDouble();
+            String category = fromServer.readUTF();
 
             Platform.runLater(() -> {
-                ta.appendText("The weight in pounds is "+weight+"\n");
-                ta.appendText("The height in meters is "+height+"\n");
-                ta.appendText("The BMI is "+bmi+"\n");
+                ta.appendText("The weight in pounds is "+weight.getText()+"\n");
+                ta.appendText("The height in meters is "+height.getText()+"\n");
+                ta.appendText("The BMI is "+bmi+". "+category+"\n");
             });
         }
         catch (Exception ex){
