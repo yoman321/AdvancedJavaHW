@@ -14,9 +14,9 @@ public class Ex2ClientController {
     DataInputStream fromServer;
     DataOutputStream toServer;
 
-    @FXML TextArea ta;
-    @FXML TextField weight;
-    @FXML TextField height;
+    @FXML private TextArea ta;
+    @FXML private TextField weight;
+    @FXML private TextField height;
 
     public void initialize(){
         try {

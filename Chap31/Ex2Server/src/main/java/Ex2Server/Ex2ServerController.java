@@ -12,7 +12,7 @@ import java.util.Date;
 
 public class Ex2ServerController {
 
-    @FXML TextArea ta;
+    @FXML private TextArea ta;
 
     public void initialize(){
         new Thread(() -> {
