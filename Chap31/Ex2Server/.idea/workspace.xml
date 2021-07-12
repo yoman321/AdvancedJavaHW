@@ -5,22 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d59ecf2b-aa90-40b3-ad4f-79038698cc5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ex1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ex2Server/Ex2Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ex2Server/Ex2ServerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Ex2Server/Ex2Server.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex1/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/build/classes/java/main/Ex2Client/Ex2Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/src/main/java/Ex2Client/Ex2Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex2Client/src/main/java/Ex2Client/Ex2ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

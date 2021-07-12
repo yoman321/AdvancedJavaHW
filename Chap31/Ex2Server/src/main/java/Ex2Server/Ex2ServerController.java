@@ -32,6 +32,7 @@ public class Ex2ServerController {
                     toClient.writeDouble(bmi);
 
                     Platform.runLater(() -> {
+                        ta.appendText("Client connect to the server at "+new Date()+"\n");
                         ta.appendText("The weight is " + weight + "\n");
                         ta.appendText("The height is " + height + "\n");
                         ta.appendText("The BMI is "+bmi+"\n");
