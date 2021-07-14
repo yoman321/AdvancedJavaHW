@@ -1,4 +1,4 @@
-package Ex3Server;
+package Ex4Client;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Ex3Server extends Application {
+public class Ex4Client extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -14,12 +14,10 @@ public class Ex3Server extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("Ex3Server.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Ex4Client.fxml"));
         Scene scene = new Scene(root);
-        primaryStage.setTitle("Ex3Server");
+        primaryStage.setTitle("Ex4Client");
         primaryStage.setScene(scene);
         primaryStage.show();
-
-        primaryStage.setOnCloseRequest(e -> System.exit(0));
     }
-}N
+}
