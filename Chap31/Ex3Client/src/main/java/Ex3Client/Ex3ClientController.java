@@ -20,7 +20,7 @@ public class Ex3ClientController {
     private DataInputStream fromServer;
     private DataOutputStream toServer;
 
-    public void initialize() throws Exception{
+    public void initialize(){
         try {
             Socket socket = new Socket("localhost", 8000);
             fromServer = new DataInputStream(socket.getInputStream());
@@ -32,9 +32,9 @@ public class Ex3ClientController {
     }
     public void onclickSubmit(){
         try{
-            toServer.writeDouble(Double.valueOf(tfAnnualInterestRate.getText()));
-            toServer.writeInt(Integer.valueOf(tfNumberOfYears.getText()));
-            toServer.writeDouble(Double.valueOf(tfLoanAmount.getText()));
+            toServer.writeDouble(Double.valueOf(tfAnnualInterestRate.getText().trim()));
+            toServer.writeInt(Integer.valueOf(tfNumberOfYears.getText().trim()));
+            toServer.writeDouble(Double.valueOf(tfLoanAmount.getText().trim()));
             toServer.flush();
 
             double monthlyPayment = fromServer.readDouble();

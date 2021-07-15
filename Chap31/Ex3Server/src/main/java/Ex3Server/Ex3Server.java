@@ -22,4 +22,4 @@ public class Ex3Server extends Application {
 
         primaryStage.setOnCloseRequest(e -> System.exit(0));
     }
-}N
+}
