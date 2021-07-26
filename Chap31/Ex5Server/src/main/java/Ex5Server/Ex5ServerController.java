@@ -42,6 +42,7 @@ public class Ex5ServerController {
         public HandleClient (Socket socket){
             this.socket = socket;
         }
+        @Override
         public void run() {
             try {
                 System.out.println("nothing");
@@ -49,6 +50,7 @@ public class Ex5ServerController {
                 DataOutputStream toClient = new DataOutputStream(socket.getOutputStream());
 
                 while (true) {
+                    System.out.println("something");
                     LoanClass loan = (LoanClass)fromClient.readObject();
                     toClient.writeDouble(loan.getMonthlyPayment());
                     toClient.writeDouble(loan.getTotalPayment());
