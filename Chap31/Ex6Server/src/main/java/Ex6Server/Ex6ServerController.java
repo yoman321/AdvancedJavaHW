@@ -88,7 +88,7 @@ public class Ex6ServerController {
                 ArrayList<Address> addresses = new ArrayList<>();
 
 
-
+                taskFromClient = new DataInputStream(client.getInputStream());
                 while (true) {
                     if (file.length() != 0){
                         boolean hasRead = true;
@@ -106,7 +106,6 @@ public class Ex6ServerController {
 //                    System.out.println(address1.getName());//test
 //                    System.out.println(fromFile.available());//test
 //                    System.out.println(addresses.size());//test
-                    taskFromClient = new DataInputStream(client.getInputStream());
                     String task = taskFromClient.readUTF();
 //                    System.out.println(task+" something");//test
 
