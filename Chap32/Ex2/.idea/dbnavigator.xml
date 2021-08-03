@@ -24,22 +24,18 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="029e9cb3-8573-4f87-963a-8827f54d5490">
-        <schema name="javaex" object-types="procedure, function" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="029e9cb3-8573-4f87-963a-8827f54d5490">
-      <console name="JavaEx" type="STANDARD" schema="javaex" session="Main" />
+    <connection id="d1fe625e-8087-4bd5-9256-428516756029">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="029e9cb3-8573-4f87-963a-8827f54d5490" />
+    <connection id="d1fe625e-8087-4bd5-9256-428516756029" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -63,15 +59,13 @@
     <filters />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces>
-      <mapping database-type="MYSQL" interface-id="DEFAULT" />
-    </recently-used-interfaces>
+    <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="029e9cb3-8573-4f87-963a-8827f54d5490" active="true">
+      <connection id="d1fe625e-8087-4bd5-9256-428516756029" active="true">
         <database>
-          <name value="JavaEx" />
+          <name value="Connection" />
           <description value="" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />

@@ -30,7 +30,7 @@ public class Ex1Controller {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver loader");
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "!Swagyolo123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "");
             System.out.println("Database connected");
 
 //            String queryString = "insert into Staff(id, lastName, firstName, mi, address, city, state, telephone, email) values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
