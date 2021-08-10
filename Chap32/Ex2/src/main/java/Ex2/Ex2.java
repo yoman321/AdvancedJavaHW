@@ -17,14 +17,14 @@ public class Ex2 extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        System.out.println("Driver loaded");
-
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "!Swagyolo123");
-        System.out.println("Database connected");
-//        Parent root = FXMLLoader.load(getClass().getResource("Ex2.fxml"));
-//        primaryStage.setTitle("Ex2");
-//        primaryStage.setScene(new Scene(root));
-//        primaryStage.show();
+//        Class.forName("com.mysql.cj.jdbc.Driver");
+//        System.out.println("Driver loaded");
+//
+//        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "!Swagyolo123");
+//        System.out.println("Database connected");
+        Parent root = FXMLLoader.load(getClass().getResource("Ex2.fxml"));
+        primaryStage.setTitle("Ex2");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 }
