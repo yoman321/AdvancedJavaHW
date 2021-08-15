@@ -25,7 +25,7 @@ public class Ex5Controller {
     }
     public void onclickShowContents(){
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "!Swagyolo123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "");
 
             s = connection.createStatement();
             ResultSet rSet = s.executeQuery("select * from "+tfTableName.getText());
