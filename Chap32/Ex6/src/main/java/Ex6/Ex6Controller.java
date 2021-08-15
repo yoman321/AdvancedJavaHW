@@ -1,35 +1,36 @@
-package Ex5;
+package Ex6;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 import java.sql.*;
 
-public class Ex5Controller {
+public class Ex6Controller {
 
-    @FXML private TextField tfTableName;
+    private Connection connection;
+    private Statement s;
+
+    @FXML private ComboBox<String> cbTableName;
     @FXML private TextArea taContents;
 
-    private Statement s;
-    private Connection connection;
-
     public void initialize(){
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            taContents.setStyle("-fx-font-family: monospace");
-        }
-        catch (ClassNotFoundException ex){
-            ex.printStackTrace();
-        }
+        cbTableName.getItems().addAll(FXCollections.observableArrayList("Enrollment", "Student", "Course"));
+        taContents.setStyle("-fx-font-family: monospace");
     }
+
     public void onclickShowContents(){
         try {
+            //Load driver and connect to database
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "!Swagyolo123");
 
-            s = connection.createStatement();
-            ResultSet rSet = s.executeQuery("select * from "+tfTableName.getText());
-            
+            //get values from db and print result
+            Statement s = connection.createStatement();
+            ResultSet rSet = s.executeQuery("select * from "+cbTableName.getValue());
+
             ResultSetMetaData rsMetaData = rSet.getMetaData();
             for (int i=1; i<=rsMetaData.getColumnCount(); i++){
                 String string = String.format("%-12s\t", rsMetaData.getColumnName(i));
@@ -38,7 +39,7 @@ public class Ex5Controller {
             taContents.appendText("\n");
 
             while (rSet.next()){
-                for (int i=1; i<=rsMetaData.getColumnCount(); i++){
+                for (int i=1;  i<=rsMetaData.getColumnCount(); i++){
                     String string = String.format("%-12s\t", rSet.getObject(i));
                     taContents.appendText(string);
                 }
@@ -48,10 +49,8 @@ public class Ex5Controller {
 
             connection.close();
         }
-        catch (SQLException ex){
+        catch (SQLException | ClassNotFoundException ex){
             ex.printStackTrace();
-            taContents.appendText("The table does not exists in this database\n");
         }
-
     }
 }
