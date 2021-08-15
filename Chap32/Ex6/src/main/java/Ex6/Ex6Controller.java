@@ -18,14 +18,14 @@ public class Ex6Controller {
 
     public void initialize(){
         cbTableName.getItems().addAll(FXCollections.observableArrayList("Enrollment", "Student", "Course"));
-        taContents.setStyle("-fx-font-family: monospace");
+        taContents.setStyle("-fx-font-family: monospace"); //Allow formatting in TextArea
     }
 
     public void onclickShowContents(){
         try {
             //Load driver and connect to database
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "!Swagyolo123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaEx", "root", "");
 
             //get values from db and print result
             Statement s = connection.createStatement();
